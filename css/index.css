@@ -77,9 +77,10 @@ h1, h2, h3, h4, h5 {
 
 /* header */
 
-@media (max-width: 1200px) {
+@media (max-width: 800px) {
   header {
     /* border: 1px solid red;  */
+    height: 130px; 
     display: flex;
     flex-flow: column-reverse;
   } 
@@ -93,15 +94,17 @@ header nav {
   margin-top: 35px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 800px) {
   header nav {
     /* border: 1px solid red;  */
+    width: 100%; 
     display: flex;
-    margin-left: 10%; 
+    justify-content: space-around;
+    
   } 
 }
 
-@media (max-width: 800px) {
+@media (max-width: 600px) {
   header nav {
     display: flex;
     flex-direction: column;  
@@ -131,16 +134,25 @@ header .logo {
   margin-top: 25px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 800px) {
   header .logo {
     /* border: 1px solid purple;  */
     width: 200px;  
+    padding-bottom: 10px; 
     align-self: center;  
   } 
 }
 
 
 /* cta */
+
+@media (max-width: 800px) {
+  .cta {
+    /* border: 1px solid orange;  */
+    display: flex; 
+    justify-content: center; 
+  }
+}
 
 .cta .cta-text {
   display: inline-block;
@@ -151,10 +163,10 @@ header .logo {
   padding: 0px 75px;
 }
 
-@media (max-width: 1200px) {
-  .cta {
-    display: flex; 
-    justify-content: center; 
+@media (max-width: 800px) {
+  .cta .cta-text {
+    /* border: 1px solid orange;  */
+    align-items: flex-start; 
   }
 }
 
