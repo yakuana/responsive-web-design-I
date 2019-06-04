@@ -81,6 +81,12 @@ h1, h2, h3, h4, h5 {
   }
 }
 
+@media (max-width: 500px) {
+  .container {
+    width: 470px;
+  }
+}
+
 /* header */
 
 @media (max-width: 800px) {
@@ -89,7 +95,15 @@ h1, h2, h3, h4, h5 {
     height: 130px; 
     display: flex;
     flex-flow: column-reverse;
-    vertical-align: 
+  } 
+}
+
+@media (max-width: 500px) {
+  header {
+    /* border: 1px solid red;  */
+    height: 200px; 
+    display: flex;
+    flex-flow: column-reverse;
   } 
 }
 
@@ -111,7 +125,7 @@ header nav {
   } 
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   header nav {
     display: flex;
     flex-direction: column;  
@@ -209,8 +223,24 @@ header .logo {
   padding-top: 39px;
 }
 
+@media (max-width: 500px) {
+  .main-content {
+    border-top: 2px solid black; 
+  }
+}
+
 .main-content .top-content {
   padding: 0 10px;
+}
+
+@media (max-width: 500px) {
+  .main-content .top-content {
+    /* border: 1px solid darkmagenta;  */
+    height: 240px; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+  }
 }
 
 .main-content .top-content .text-content {
@@ -223,6 +253,13 @@ header .logo {
   .main-content .top-content .text-content{
     /* border: 1px solid orange;  */
     width: 350px; 
+  } 
+}
+
+@media (max-width: 800px) {
+  .main-content .top-content .text-content{
+    /* border: 1px solid orangered;  */
+    width: 100%;
   } 
 }
 
@@ -240,10 +277,27 @@ header .logo {
   }
 }
 
+@media (max-width: 500px) {
+  .main-content .middle-img {
+    width: 470px; 
+  }
+}
+
 .main-content .bottom-content {
   margin-top: 37px;
   padding: 0 10px;
 }
+
+@media (max-width: 500px) {
+  .main-content .bottom-content {
+    /* border: 1px solid burlywood;  */
+    height: 400px;
+    padding: 0 0 0 0; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+  }
+} 
 
 .main-content .bottom-content .text-content {
   width: 275px;
@@ -256,6 +310,11 @@ header .logo {
     width: 235px; 
 }
 
+@media (max-width: 800px) {}
+  .main-content .bottom-content .text-content {
+    width: 100%; 
+}
+
 .main-content .bottom-content .text-content:last-child {
   margin-right: 0;
 }
@@ -264,6 +323,12 @@ header .logo {
   margin-top: 57px;
   border-top: 1px solid black;
   padding: 39px 10px 0;
+}
+
+@media (max-width: 500px) {
+  .contact {
+    border-top: 2px solid black; 
+  }
 }
 
 .contact p {
